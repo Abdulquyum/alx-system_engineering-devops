@@ -8,3 +8,4 @@ bye bye betty
 deleted my_first_directory
 going back to immediate previous location
 command listing all files with hidden, parent and boot
+printing file type
