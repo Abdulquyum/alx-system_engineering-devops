@@ -1,1 +1,0 @@
-cd ~ - go back home
