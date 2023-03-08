@@ -5,3 +5,4 @@ ls -a - show hidden files
 listing folder content with user and grop ID
 moving file from a place to another
 bye bye betty
+deleted my_first_directory
