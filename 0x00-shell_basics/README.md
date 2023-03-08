@@ -7,3 +7,4 @@ moving file from a place to another
 bye bye betty
 deleted my_first_directory
 going back to immediate previous location
+command listing all files with hidden, parent and boot
