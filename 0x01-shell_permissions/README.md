@@ -1,2 +1,1 @@
-working on shell basics
 shell permissions for files and folders
