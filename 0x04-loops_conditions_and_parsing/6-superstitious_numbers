@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Prints Best School 10 times with while loop
+# Prints 1 to 20 with some country supertitous bad luck number
 i=1
 while((i <= 20))
 do
