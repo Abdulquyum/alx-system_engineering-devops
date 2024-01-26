@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Prints Best School 10 times with while loop
+i=0
+list="Best School"
+until [ $i == 10 ]
+do
+echo "$list"
+i=$((i+1))
+done
