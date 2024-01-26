@@ -1,0 +1,1 @@
+This Folder is created for uploads of my screenshots on Unix command line challenge and also a good practice on how to use sftp - Secure File Transfer Protocol in transfering files and objects from remote working directory to the sandbox or terminal
