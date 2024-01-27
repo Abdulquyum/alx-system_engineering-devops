@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+#Prints current program Process ID
 pid=$$
 echo $pid
