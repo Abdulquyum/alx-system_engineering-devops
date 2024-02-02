@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #Using ping command to check network issue and speed
-if [ -z "$1" ]; then
+if ((!$1)); then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
-	ping /n 5 $1
+	ping /n 5
 fi
+done
