@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-#What is the OSI model? - The OSI model is a model that characterizes the communication functions of a telecommunication system with a strong regard for their underlying internal structure and technology
-echo 3
+3
+2
