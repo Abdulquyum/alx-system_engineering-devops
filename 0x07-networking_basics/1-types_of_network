@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #answer types of network - internet, LAN, WAN
-3
-2
-1
+echo 3
+echo 2
+echo 1
