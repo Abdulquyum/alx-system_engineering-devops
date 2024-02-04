@@ -4,4 +4,8 @@ while true
 do
 echo "To infinity and beyond"
 sleep 2
+terminate() {
+	echo "I am invincible!!!"
+}
+trap terminate SIGTERM
 done
