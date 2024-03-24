@@ -1,0 +1,1 @@
+This Folder was created to practice Configuration Management in puppet, Configuration Management is the best practice to protect the system and ensure safe handling incase of unexpected disfunctionality
