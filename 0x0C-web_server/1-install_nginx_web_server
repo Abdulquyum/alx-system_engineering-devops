@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Install Nginx, amke it listen to port 80 and welcoming page should display Hello World
+sudo apt-get -y install nginx
+echo 'Hello World!' > index.nginx-debian.html
