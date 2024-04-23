@@ -1,0 +1,1 @@
+This Folder was craeted to master DeVops in areas like web, web server, and tools like Nginx and commands like scp and curl. web server is one of the most important topic for a full stack Engineer and this directory also deals with automated commands with bash script to erform some actions on the newly granted server
