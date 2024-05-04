@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo >> "add_header X-Served-By $hostname;" >> /etc/nginx/sites-available/default
