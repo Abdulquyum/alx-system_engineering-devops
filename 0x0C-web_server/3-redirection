@@ -5,6 +5,6 @@ sudo apt-get update
 sudo apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 old_string="location"
-string_replace="location / redirect_me {\nreturn 301 https://www.google.com;"
+string_replace="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
 sudo sed -i 's/"${old_string}"/"${string_replace}"/g' /etc/nginx/sites-enabled/default
 service nginx restart
