@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# get and display information about domain and subdomain
 
 subdomain_info() {
     local domain=$1
