@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-echo >> "add_header X-Served-By $hostname;" >> /etc/nginx/sites-available/default
+hostname=$(hostname)
+nginx_config="/etc/nginx/sites-available/default"
+sudo sed -i '/add_header X-Served-By/d' "$nginx_config"
+sudo sed -i "/location \/ {/a\ \ \ \ add_header X-Served-By $hostname;" "$nginx_config"
+sudo nginx -t && sudo service nginx reload
