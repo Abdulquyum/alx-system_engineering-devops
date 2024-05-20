@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+subdomain_info() {
+    local domain=$1
+    local sub=$2
+    local record
+
+    # Use dig to get the DNS record information
+    record=$(dig +short "${sub}.${domain}")
+
+    # Extract the record type
+    if [ -n "$record" ]; then
+        if [[ "$record" =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            type="A"
+        else
+            type=$(dig "${sub}.${domain}" | awk '/ANSWER SECTION:/ {getline; print $4}')
+        fi
+        echo "The subdomain ${sub} is a ${type} record and points to ${record}"
+    else
+        echo "No record found for subdomain ${sub}"
+    fi
+}
+
+# Main script logic
+if [ "$#" -eq 1 ]; then
+    domain=$1
+    subdomain_info "$domain" "www"
+    subdomain_info "$domain" "lb-01"
+    subdomain_info "$domain" "web-01"
+    subdomain_info "$domain" "web-02"
+elif [ "$#" -eq 2 ]; then
+    domain=$1
+    sub=$2
+    subdomain_info "$domain" "$sub"
+fi
