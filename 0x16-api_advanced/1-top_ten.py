@@ -11,7 +11,7 @@ def top_ten(subreddit):
         """method to print titles of the first 10
         hot posts after query"""
         url = f"https://www.reddit.com/r/{}/hot.json"
-        req = requests.get(url, header={"user-Agents":"My ReddiBot"})
+        req = requests.get(url, header={"user-Agents": "My ReddiBot"})
         data = req.json()
         titles = data["titles"]["hot post"]
         return titles
